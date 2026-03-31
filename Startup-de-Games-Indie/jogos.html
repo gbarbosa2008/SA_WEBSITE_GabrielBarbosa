@@ -17,23 +17,33 @@
 </head>
 
 <body>
-  <h1 align="center">JOGOS</h1>
-
   <header>
-    <nav align="center">
-      <a href="./index.html">Home</a>
-      <a href="./jogos.html">Jogos</a>
-      <a href="./galeria.html">Estudio</a>
+    <nav class="navbar border-bottom border-body">
+      <!-- Navbar content -->
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">
+          <img src="./images/logo.png" alt="Logo da PixelForge Studios" width="30" height="30"
+            class="d-inline-block align-text-top">
+          <br>  
+          PixelForge Studios
+        </a>
+
+        <h1 id="titulo-game">Catálogo de Jogos</h1>
+
+        <div class="nav-flex">
+          <a href="./index.html" class="nav-link d-inline">Home</a>
+          <a href="./jogos.html" class="nav-link d-inline">Jogos</a>
+          <a href="./galeria.html" class="nav-link d-inline">Estúdio</a>
+          <a href="./contato.html" class="nav-link d-inline">Contato</a>
+        </div>
     </nav>
   </header>
 
-  <hr />
-
   <br />
 
-  <table border="1" align="center">
+  <table class="table table-dark w-75 mx-auto">
     <thead>
-      <tr>
+      <tr class="table-active">
         <th>Nome do Jogo</th>
         <th>Descrição</th>
         <th>Data</th>

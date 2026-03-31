@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face{
+    src: url("");
+    font-family: "bebeas";
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+
+header {
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+.nav-flex {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+    background-color: #333333;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.nav-flex a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-flex a:hover {
+    color: #ffcc00;
+}
+
+
+.navbar-brand{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.corpo {
+    padding: 20px; /* Espaçamento interno */
+    margin-inline: 8%; /* Margem lateral para centralizar o conteúdo */
+}
+
+.card{
+    background-color: #f0f0f0;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px; /* Espaçamento entre os cards */
+}
+
+#icon{
+    font-size: 48px;
+    color: #333333;
+    margin-bottom: 10px;
+    margin-left: 2%;
+}
+
+
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+

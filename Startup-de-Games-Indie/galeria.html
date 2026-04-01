@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Galeria de Fotos</title>
 
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="style.css">
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -18,62 +18,119 @@
 
 <body>
   <header>
-    <nav class="navbar border-bottom border-body">
+    <nav class="navbar border-body">
       <!-- Navbar content -->
-      <div class="container-fluid">
-        <a class="navbar-brand" href="./index.html">
-          <img src="./images/logo.png" alt="Logo da PixelForge Studios" width="30" height="30"
-            class="d-inline-block align-text-top">
-          <br>
-          PixelForge Studios
-        </a>
+      <div class="container-fluid"> 
 
-        <h1 id="titulo-game">Galeria de Fotos</h1>
+        <a class="navbar-brand brand-flex">
+          <h5 id="titulo-nav" style="font-size: 45px;">PixelForge Studios</h5>
+          <span id="slogan">Criando mundos pixelados, onde a nostalgia encontra a inovação.</span>
+        </a>
 
         <div class="nav-flex">
           <a href="./index.html" class="nav-link d-inline">Home</a>
           <a href="./jogos.html" class="nav-link d-inline">Jogos</a>
-          <a href="./galeria.html" class="nav-link d-inline">Estúdio</a>
+          <a href="./galeria.html" class="nav-link d-inline">Galeria</a>
           <a href="./contato.html" class="nav-link d-inline">Contato</a>
         </div>
     </nav>
+
   </header>
 
 
-  <p id="p-galeria">
-    Aqui você encontra algumas imagens do nosso projeto, Grand Theft Cariacica e Grand Theft Vitória.
-    Famosas VTR'S do Estado do Espirito Santo.
-  </p>
+  <main class="corpo">
 
-  <div class="d-grid">
-    <img src="./images/HILUX.jpg" alt="vtr_hiluxES" height="395px" />
-    <figcaption>
-      <h3>Nossa VTR Hilux ES, VTR de primeira linha.</h3>
-    </figcaption>
+    <hr />
 
-    <img src="./images/PCES.jpg" alt="vtr_PCES" height="395px" />
-    <figcaption>
-      <h3>Nossa querida VTR PCES, mais pedida pelos usuários</h3>
-    </figcaption>
+    <h1>Nossos cases de sucesso</h1>
 
-    <img src="./images/VTR.jpg" alt="vtr_PMES" height="395px" />
-    <figcaption>
-      <h3>A classica VTR PMES, famoso bom e bonito.</h3>
-    </figcaption>
-
-  </div>
+    <p>
+      Aqui você encontra algumas imagens do nosso projeto, Grand Theft Cariacica e Grand Theft Vitória.
+      Famosas VTR'S do Estado do Espirito Santo.
+    </p>
 
 
-  <footer>
-    <p>gbarbosa@outlook.com.br</p>
-    <p>(27)9999-9999</p>
-    <p>&copy; 2026 PixelForge Studios. Todos os direitos reservados</p>
-  </footer>
+    <section id="vtr" class="container secao">
+      <div class="vtr-galery">
+        <div class="vtr-galery">
+          <article class="card-vtr">
+            <img src="./images/HILUX.jpg" alt="vtr_hiluxES" height="395px" />
+            <h3>VTR Hilux ES</h3>
+            <p>
+              Nossa VTR Hilux ES, VTR de primeira linha.
+            </p>
+          </article>
+
+          <article class="card-vtr">
+            <img src="./images/PCES.jpg" alt="vtr_PCES" height="300px" />
+            <h3>VTR PCES</h3>
+            <p>
+              A VTR PCES, uma verdadeira lenda das ruas de Cariacica.
+            </p>
+          </article>
+
+          <article class="card-vtr">
+            <img src="./images/VTR.jpg" alt="vtr_PMES" height="395px" />
+            <h3>VTR PMES</h3>
+            <p>
+              A classica VTR PMES, famosa por ser uma das melhores do mercado.
+            </p>
+          </article>
+
+          <article class="card-vtr">
+            <img src="./images/BLAZER.jpg" alt="vtr_PMES" height="395px" />
+            <h3>BLAZER PMES</h3>
+            <p>
+              A VTR Blazer PMES, uma verdadeira lenda das ruas de Vitória.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="secao-grid">
+
+      <h1>Reconhecimentos</h1>
+
+      <p>Nossos <strong>reconhecimentos e premiações</strong> 2026</p>
+
+
+      <!-- GRID -->
+      <div class="painel-reconhecimento">
+        <div class="item-reconhecimento">
+          <h3>Desenvolvimento Premium</h3>
+          <p>Reconhecimento pelo desenvolvimento de alta qualidade</p>
+        </div>
+        <div class="item-reconhecimento">
+          <h3>Design</h3>
+          <p>Reconhecimento pelo design inovador e criativo</p>
+        </div>
+        <div class="item-reconhecimento">
+          <h3>Inovação</h3>
+          <p>Reconhecimento pela inovação tecnológica</p>
+        </div>
+        <div class="item-reconhecimento">
+          <h3>Preparação</h3>
+          <p>Reconhecimento pela preparação e execução de projetos de alta qualidade</p>
+        </div>
+      </div>
+
+    </section>
+
+
+  </main>
 
   <!-- IMPORTAÇÃO DO JAVASCRIPT DO BOOTSTRAP -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
+
+  <footer style="position: relative; text-align: center; margin-top: 8%; font-family: bebas; font-size: 16px; color: #ffffff; display: flex; gap: 20rem;">
+    <p>gbarbosa@outlook.com.br</p>
+    <p>&copy; 2026 PixelForge Studios. Todos os direitos reservados</p>
+    <p>(27)9999-9999</p>
+  </footer>
 
 </body>
 

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" href="./images/logo.png" />
+</head>
+
+<style>
+    .form-contato {
+        display: flex;
+        flex-direction: column;
+        /* Organiza os elementos em uma coluna */
+        gap: 20px; /* Adiciona um espaço entre os elementos */
+        max-width: 600px; /* Define uma largura máxima para o formulário */
+        margin: 0 auto; /* Centraliza o formulário horizontalmente */
+        padding: 50px;
+        background-color: #f0f0f0; /* Define a cor de fundo do formulário */
+        border-radius: 5%;
+        color: #0e0d0d;
+    }
+
+    .form-grupo {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .botao {
+        align-self: flex-start;
+        /* Alinha o botão à esquerda */
+        background-color: #000000;
+        color: #ffffff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-family: "bebas";
+    }
+
+    .botao:hover {
+        background-color: #757575;
+    }
+
+    input{
+        background-color: #1a1a1a;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        color: white;
+        font-family: "cabin";
+    }
+
+    label{
+        font-size: 20px;
+        font-family: "bebas";
+    }
+
+    textarea{
+        background-color: #1a1a1a;
+        border: none; /* Remove a borda padrão */
+        padding: 10px;
+        border-radius: 5px;
+        color: white;
+        font-family: "cabin";
+    }
+
+</style>
+
+<body>
+
+  <header>
+    <nav class="navbar border-body">
+      <!-- Navbar content -->
+      <div class="container-fluid"> 
+
+        <a class="navbar-brand brand-flex">
+          <h5 id="titulo-nav" style="font-size: 45px;">PixelForge Studios</h5>
+          <span id="slogan">Criando mundos pixelados, onde a nostalgia encontra a inovação.</span>
+        </a>
+
+        <div class="nav-flex">
+          <a href="./index.html" class="nav-link d-inline">Home</a>
+          <a href="./jogos.html" class="nav-link d-inline">Jogos</a>
+          <a href="./galeria.html" class="nav-link d-inline">Galeria</a>
+          <a href="./contato.html" class="nav-link d-inline">Contato</a>
+        </div>
+    </nav>
+
+  </header>
+
+    <main class="corpo">
+
+        <form class="form-contato">
+            <h1>Fale conosco</h1>
+            <div class="form-grupo">
+                <label for="nome">Nome</label>
+                <input type="text" class="form-control" id="nome" placeholder="Seu nome">
+            </div>
+
+            <div class="form-grupo">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Seu email">
+            </div>
+
+            <div class="form-grupo">
+                <label for="assunto">Assunto</label>
+                <input type="text" class="form-control" id="assunto" placeholder="Assunto da mensagem">
+            </div>
+
+            <div class="form-grupo">
+                <label for="mensagem">Mensagem</label>
+                <textarea class="form-control" id="mensagem" rows="5" placeholder="Sua mensagem"></textarea>
+            </div>
+
+            <button class="botao" type="submit">Enviar</button>
+
+        </form>
+
+    </main>
+
+  <footer style="position: relative; text-align: center; margin-top: 8%; font-family: bebas; font-size: 16px; color: #ffffff; display: flex; gap: 20rem;">
+    <p>gbarbosa@outlook.com.br</p>
+    <p>&copy; 2026 PixelForge Studios. Todos os direitos reservados</p>
+    <p>(27)9999-9999</p>
+  </footer>
+
+
+
+</body>
+
+</html>
